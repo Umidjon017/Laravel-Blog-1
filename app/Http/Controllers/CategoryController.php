@@ -48,7 +48,7 @@ class CategoryController extends Controller
         $category->slug         =   Str::slug($request->name);
         $category->save();
 
-        return redirect()->route('categories.index')->with('success', 'Category successfully created!');
+        return redirect()->route('categories.index')->with('success', $category->name . ' - category successfully created!');
     }
 
     /**
@@ -75,7 +75,7 @@ class CategoryController extends Controller
         $category->slug =   Str::slug($request->name);
         $category->save();
 
-        return redirect()->route('categories.index')->with('success', 'Category successfully updated!');
+        return redirect()->route('categories.index')->with('success', $category->name . ' - category successfully updated!');
     }
 
     /**

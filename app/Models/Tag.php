@@ -11,7 +11,7 @@ class Tag extends Model
     use HasFactory;
 
     protected $table = 'tags';
-    protected $fillabel = ['name', 'slug'];
+    protected $fillable = ['name', 'slug'];
 
     public function posts():BelongsToMany
     {
