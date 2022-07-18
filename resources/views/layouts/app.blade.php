@@ -16,7 +16,11 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+        {{-- Livewire --}}
         @livewireStyles
+
+        {{-- BLade UI kit --}}
+        @bukStyles(true)
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -48,6 +52,11 @@
 
         @stack('modals')
 
+        {{-- Livewire --}}
         @livewireScripts
+
+        {{-- Blade UI kit --}}
+        @bukScripts(true)
+
     </body>
 </html>
