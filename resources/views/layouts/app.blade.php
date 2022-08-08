@@ -15,6 +15,9 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="{{ asset('css/choices.css') }}">
 
         {{-- Livewire --}}
         @livewireStyles
